@@ -1,0 +1,71 @@
+{
+  // Files Configs
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+    "**/.git": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+
+  // Web development settings
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[css]": {
+    "editor.suggest.insertMode": "replace"
+  },
+  "[javascript]": {
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "tailwindCSS.classAttributes": ["class", "ui"],
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+
+  // Git & GitHub settings
+  "git.enableSmartCommit": true,
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "githubPullRequests.pullBranch": "never",
+  "githubPullRequests.fileListLayout": "tree",
+  "githubPullRequests.assignCreated": "${user}",
+  "githubPullRequests.labelCreated": ["semver:patch"],
+  "githubPullRequests.pullRequestDescription": "Copilot",
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    { "text": "Use conventional commit format: type(scope): description" },
+    { "text": "Use imperative mood: 'Add feature' not 'Added feature'" },
+    { "text": "Keep entire commit under 80 characters" },
+    { "text": "Use types: feat, fix, docs, style, refactor, perf, chore, ci" },
+    { "text": "Include scope when relevant (e.g., api, ui, auth)" }
+  ],
+  "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [
+    { "text": "Start title with '[TASK-] ' prefix format" },
+    { "text": "Keep title under 80 characters including prefix" },
+    { "text": "Use imperative mood: 'Add feature' not 'Added feature'" },
+    { "text": "Follow this structured format for PR descriptions:" },
+    { "text": "### New Features" },
+    { "text": "- [Feature description]" },
+    { "text": "### Changes" },
+    { "text": "- [Change description]" },
+    { "text": "### Fixes" },
+    { "text": "- [Fix description]" },
+    { "text": "Use bullet points for each item under appropriate sections" },
+    { "text": "Be specific and descriptive - avoid generic terms" },
+    { "text": "Include only relevant sections - omit empty sections" },
+    { "text": "Use present tense for descriptions" },
+    { "text": "Describe only the commits made since last PR" }
+  ]
+}
