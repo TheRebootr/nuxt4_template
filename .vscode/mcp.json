@@ -3,6 +3,11 @@
     "nuxt-ui": {
       "type": "http",
       "url": "https://ui.nuxt.com/mcp"
+    },
+    "nuxt-remote": {
+      "url": "https://nuxt.com/mcp",
+      "type": "http"
     }
-  }
+  },
+  "inputs": []
 }
